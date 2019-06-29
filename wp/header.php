@@ -4,9 +4,7 @@
 <head>
 
 <meta charset="UTF-8" />
-<title>ホーム</title>
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<link rel="stylesheet" href="/wp-content/themes/lsam/css/common.css" type="text/css" media="screen">
+<?php wp_head(); ?>
 </head>
 <body>
 <header>
