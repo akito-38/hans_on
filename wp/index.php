@@ -8,7 +8,7 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="/wp-content/themes/lsam/css/common.css" type="text/css" media="screen">
 </head>
-
+<body>
 <header>
   <div class="header_gnavi_bg">
     <div class="header_gnavi">
@@ -45,7 +45,7 @@
   </div>
 </header>
 
-<body><main class="top_box">
+<main class="top_box">
   <div class="top_heroimg_bg">
     <div class="heroimg_box">
       <div class="heroimg_box_">
