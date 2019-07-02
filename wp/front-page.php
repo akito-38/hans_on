@@ -31,7 +31,7 @@
           <p class="post_date flort_r">2018.00.00</p>
         </div>
       </div>
-      <img src="../wp-content/themes/lsam/img/post_img1.png" alt="">
+      <img src="<?php print get_template_directory_uri(); ?>/img/post_img1.png" alt="">
       </a>
     </li>
     <li class="post_list">
@@ -48,7 +48,7 @@
           <p class="post_date flort_r">2018.00.00</p>
         </div>
       </div>
-      <img src="../wp-content/themes/lsam/img/post_img1.png" alt="">
+      <img src="<?php print get_template_directory_uri(); ?>/img/post_img1.png" alt="">
       </a>
     </li>
     <li class="post_list">
@@ -65,7 +65,7 @@
           <p class="post_date flort_r">2018.00.00</p>
         </div>
       </div>
-      <img src="../wp-content/themes/lsam/img/post_img1.png" alt="">
+      <img src="<?php print get_template_directory_uri(); ?>/img/post_img1.png" alt="">
       </a>
     </li>
     

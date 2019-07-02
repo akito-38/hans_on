@@ -16,8 +16,8 @@
   <div class="footer_copyright">
     <p>©lsam Inc. All Rights Reserved.</p>
     <ul>
-      <li><a href="" class="footer_t"><img src="/wp-content/themes/lsam/img/icon_twitter.png" alt=""></a></li>
-      <li><a href="" class="footer_f"><img src="/wp-content/themes/lsam/img/icon_facebook.png" alt=""></a></li>
+      <li><a href="" class="footer_t"><img src="<?php print get_template_directory_uri(); ?>/img/icon_twitter.png" alt=""></a></li>
+      <li><a href="" class="footer_f"><img src="<?php print get_template_directory_uri(); ?>/img/icon_facebook.png" alt=""></a></li>
     </ul>
   </div>
 </footer>
