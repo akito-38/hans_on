@@ -31,20 +31,36 @@ if ( $st_query->have_posts() ):
 ?>
 
     <li class="post_list">
-      <a href="">
+      <a href="<?php print get_the_permalink() ?>">
       <div class="post_list_box">
-        <p class="category_name mb10">カテゴリネーム</p>
-        <h1 class="mb10">記事のタイトル文が入ります。記事のタイトル文が入ります。記事のタイトル文が入ります。…</h1>
+        <p class="category_name mb10"><?php echo esc_html(get_the_category()[0]->name); ?></p>
+        <h1 class="mb10"><?php print esc_html(get_the_title()); ?></h1>
         <div class="post_list_status">
-          <ul class="post_tag flort_l">
-            <li>タグテキスト</li>
-            <li>タグテキスト</li>
-            <li>タグテキスト</li>
-          </ul>
-          <p class="post_date flort_r">2018.00.00</p>
+        <?php
+          $posttags2 = get_the_tags();
+          if ($posttags2) {
+        ?>
+      
+        <ul class="post_tag flort_l">
+        <?php
+          foreach ($posttags2 as $tag) {
+            echo '<li>'. esc_html($tag->name).'</li> ' ;
+          }
+        ?>
+        </ul>
+  <?php  } ?>
+          <p class="post_date flort_r"><?php echo  esc_html(get_the_date("Y.m.d")); ?></p>
         </div>
       </div>
-      <img src="<?php print get_template_directory_uri(); ?>/img/post_img1.png" alt="">
+     <?php
+          $thumbnail_id = get_post_thumbnail_id();
+            if(has_post_thumbnail()){
+            $eye_img = wp_get_attachment_image_src( $thumbnail_id);
+              print'<img src="'.$eye_img[0] .'" alt="'.  esc_html(get_the_title()) .'" class="eyecatch">';
+            }else{
+              print '<img src="'.get_template_directory_uri().'/img/post_img1.png" alt="'.  esc_html(get_the_title()) .'" class="eyecatch">';
+            }
+      ?>
       </a>
     </li>
     
