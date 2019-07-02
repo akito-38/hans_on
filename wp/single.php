@@ -1,3 +1,4 @@
+
 <?php get_header();
 if ( have_posts() ): while ( have_posts() ) : the_post();
  ?>
@@ -12,7 +13,6 @@ if ( have_posts() ): while ( have_posts() ) : the_post();
     </div>
 
     <?php
-    //サムネイルの書き出し
           $thumbnail_id = get_post_thumbnail_id();
             if(has_post_thumbnail()){
             $eye_img = wp_get_attachment_image_src( $thumbnail_id,'size1');
@@ -23,17 +23,18 @@ if ( have_posts() ): while ( have_posts() ) : the_post();
       ?>
 
       <?php
-      //タグの取得と書き出し
         $posttags = get_the_tags();
         if ($posttags) {
       ?>
         <ul class="post_tag mb40">
       <?php
+      
         foreach ($posttags as $tag) {
           echo esc_html('<li class="mr5">'.$tag->name.'</li>') ;
         }
+
       ?>
-        </ul>
+          </ul>
       <?php }; ?>
 
     <h1 class="post_title"><?php  esc_html(the_title()); ?></h1>
@@ -42,8 +43,8 @@ if ( have_posts() ): while ( have_posts() ) : the_post();
   <p class="post_text"> <?php the_content(); ?></p>
 
   <?php
-    $prevpost = get_adjacent_post(false, '', true); //前の記事URL取得
-    $nextpost = get_adjacent_post(false, '', false); //次の記事URL取得
+    $prevpost = get_adjacent_post(false, '', true); //前の記事
+    $nextpost = get_adjacent_post(false, '', false); //次の記事
   ?>
   <ul class="post_transition">
     <?php if ( $prevpost ) :?>
