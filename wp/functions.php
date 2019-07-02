@@ -27,3 +27,11 @@ function nendebcom_theme_slug_setup() {
    add_theme_support( 'title-tag' );
 }
 add_action( 'after_setup_theme', 'nendebcom_theme_slug_setup' );
+
+
+/* -------------------------------------------------------------
+//画像の設定
+// ------------------------------------------------------------*/
+//アイキャッチを有効にする
+add_theme_support('post-thumbnails');
+
