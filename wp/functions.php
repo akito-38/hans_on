@@ -34,4 +34,4 @@ add_action( 'after_setup_theme', 'nendebcom_theme_slug_setup' );
 // ------------------------------------------------------------*/
 //アイキャッチを有効にする
 add_theme_support('post-thumbnails');
-
+add_image_size('size1',830, 350, true);
