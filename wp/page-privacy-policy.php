@@ -45,7 +45,7 @@
     <p class="mt30">2018年3月1日<br>フリーランサー 宮本 智晃</p>
   </section>
 
-</main>
+
 </main>
 <?php get_footer(); ?>
 </body>
