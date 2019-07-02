@@ -20,8 +20,8 @@
 <?php
   $args = array(
     'post_type' => 'post',
-    'posts_per_page' => 1,
- 
+    'paged' => 1,
+    'posts_per_page' => 10,
   );
   $st_query = new WP_Query( $args );
 ?>
@@ -33,7 +33,7 @@ if ( $st_query->have_posts() ):
     <li class="post_list">
       <a href="">
       <div class="post_list_box">
-        <p class="category_name mb10">カテゴリネームs</p>
+        <p class="category_name mb10">カテゴリネーム</p>
         <h1 class="mb10">記事のタイトル文が入ります。記事のタイトル文が入ります。記事のタイトル文が入ります。…</h1>
         <div class="post_list_status">
           <ul class="post_tag flort_l">
