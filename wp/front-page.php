@@ -72,7 +72,7 @@ if ( $st_query->have_posts() ):
   endif; 
   wp_reset_postdata();
 ?>
-    <li class="more_btn"><a href="/category/doernote/news/" class="default_btn">もっと見る</a></li>
+   
   </ul>
 
 </main>
