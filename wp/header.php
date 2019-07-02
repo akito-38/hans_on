@@ -6,7 +6,7 @@
 <meta charset="UTF-8" />
 <?php wp_head(); ?>
 </head>
-<body>
+<body <?php body_class(); ?>>
 <header>
   <div class="header_gnavi_bg">
     <div class="header_gnavi">
