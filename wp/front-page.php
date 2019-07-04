@@ -17,17 +17,10 @@
     <h1 class="title_h1">お知らせ</h1>
   </section>
   <ul class="post_list_box">
-<?php
-  $args = array(
-    'post_type' => 'post',
-    'paged' => 1,
-    'posts_per_page' => 10,
-  );
-  $st_query = new WP_Query( $args );
-?>
+
 <?php 
-if ( $st_query->have_posts() ): 
-  while ( $st_query->have_posts() ) : $st_query->the_post(); 
+if ( have_posts() ): 
+  while ( have_posts() ) : the_post();
 ?>
 
     <li class="post_list">
